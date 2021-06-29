@@ -1,0 +1,141 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2169639589651920421
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2902361528437392438}
+  - component: {fileID: 2309537038441775851}
+  m_Layer: 0
+  m_Name: Tablero_Ajedrez
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2902361528437392438
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2169639589651920421}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 337770490116848728}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2309537038441775851
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2169639589651920421}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e883b8aa83bd8ed41b0ecfa154d929d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Casilla: {fileID: 2923066409442248623, guid: e9b65469ed8f0bc4baac96019af617dc, type: 3}
+  CuadroMedida: 20
+  CasillaMedida: 15
+  ArrayPiezasBlancas:
+  - {fileID: 7147773339346811730, guid: b8c363746e2220942afa21b1ecb5e7a5, type: 3}
+  - {fileID: 5690914949201430518, guid: 1b3a80069d1bd7440985492d029eb7c6, type: 3}
+  - {fileID: 2655913704405080840, guid: d957600486e76fb49a1380c50519e8a3, type: 3}
+  - {fileID: 2140862811523572427, guid: 06db840055e01f94daa548df6273b7ff, type: 3}
+  - {fileID: 6295857170328201908, guid: 400b86eea2f8d82408e150f113a862d5, type: 3}
+  - {fileID: 4359384960672155175, guid: 201b9c34421ca834bb7dee698f61eaf6, type: 3}
+  ArrayPiezasNegras:
+  - {fileID: 2275011642228575157, guid: 0804ca5ff484d964c8d9f3060c989e47, type: 3}
+  - {fileID: 920661151893133385, guid: 8e527250714bd4b4b8598ed662060927, type: 3}
+  - {fileID: 1545692205850190296, guid: 40d98b848e7cf884d9d0c2fae7549fd9, type: 3}
+  - {fileID: 680295529115122094, guid: 3de07ed58cdbe1f4dae46cfc2fac04c0, type: 3}
+  - {fileID: 2775448058399595749, guid: ba55f8eac0c178a4cbe3f8cff44274da, type: 3}
+  - {fileID: 925205626636298239, guid: 12e4ba6881e46f4489755af8ce31569f, type: 3}
+--- !u!1 &5729823244465880341
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 337770490116848728}
+  - component: {fileID: 2180206423414989846}
+  - component: {fileID: 1391630797677957544}
+  m_Layer: 0
+  m_Name: Tablero
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &337770490116848728
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5729823244465880341}
+  m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 80, y: 0, z: 80}
+  m_LocalScale: {x: 80, y: 80, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2902361528437392438}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
+--- !u!33 &2180206423414989846
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5729823244465880341}
+  m_Mesh: {fileID: -5495902117074765545, guid: 2e795d9c19733944c8e14c56ea207ccb, type: 3}
+--- !u!23 &1391630797677957544
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5729823244465880341}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: b409a9cc3d3acba46aa88cedc0845a06, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
